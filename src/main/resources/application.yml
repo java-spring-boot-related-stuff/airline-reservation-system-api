@@ -4,9 +4,9 @@ server:
 
 spring:
   datasource:
-    url: dburl
-    username: dbusername
-    password: dbpassword
+    url: jdbc:mysql://trial-db-instance.cqifzqlssnph.ap-south-1.rds.amazonaws.com:3306/shubhamdb?useSSL=false&serverTimezone=UTC
+    username: admin
+    password: admin#123lk!!
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     database-platform: org.hibernate.dialect.MySQL8Dialect

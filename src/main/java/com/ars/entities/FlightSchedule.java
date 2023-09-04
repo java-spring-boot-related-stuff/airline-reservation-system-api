@@ -46,8 +46,7 @@ public class FlightSchedule {
     @Column(name="max_waiting_capacity")
     private Integer maxWaitingCapacity;
 
-    @Column(name="current_status")
-    private Integer currentStatus;
+
 
     @Column(name="created_at")
     private LocalDateTime createdAt;

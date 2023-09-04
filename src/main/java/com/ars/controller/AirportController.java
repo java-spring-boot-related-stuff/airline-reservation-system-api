@@ -1,17 +1,27 @@
 package com.ars.controller;
 
-import com.priyanshu.ars.model.request.AirportCreateUpdateReq;
+import com.ars.entities.Airport;
+import com.ars.model.request.AirportCreateUpdateReq;
+import com.ars.services.AirportService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController("/airport")
+@RestController
+@RequestMapping("/airport")
 public class AirportController {
+    @Autowired
+    private AirportService airportService;
 
     @PostMapping
-    public Object onboardAirport(@RequestBody AirportCreateUpdateReq airportCreateReq) {
-        return null;
+    public Airport onboardAirport(@RequestBody AirportCreateUpdateReq airportCreateReq) {
+
+        return airportService.createAirport(airportCreateReq);
+
     }
+
 
 
 }

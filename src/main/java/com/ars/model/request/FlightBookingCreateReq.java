@@ -7,6 +7,7 @@ import lombok.ToString;
 @ToString
 public class FlightBookingCreateReq {
 
+
     private String scheduleId;
 
     private Integer amountPaid;
