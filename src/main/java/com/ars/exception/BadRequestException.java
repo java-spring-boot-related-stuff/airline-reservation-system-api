@@ -1,4 +1,4 @@
-package com.priyanshu.ars.exception;
+package com.ars.exception;
 
 public class BadRequestException extends ApplicationException{
 

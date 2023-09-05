@@ -1,13 +1,13 @@
-package com.priyanshu.ars;
+package com.ars;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AirlineReservationSystemApiApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AirlineReservationSystemApiApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
