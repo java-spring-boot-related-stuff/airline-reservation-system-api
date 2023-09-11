@@ -13,4 +13,6 @@ public class FlightBookingCreateReq {
     private Integer amountPaid;
 
     private String customerName;
+
+    private Integer currentStatus;
 }

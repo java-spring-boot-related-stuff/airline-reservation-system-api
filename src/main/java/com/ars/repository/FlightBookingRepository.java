@@ -8,7 +8,7 @@ import java.util.Optional;
 
 public interface FlightBookingRepository extends JpaRepository<FlightBooking,String> {
 
-    int countByCurrentStatusNot(int status);
+    int countByFlightScheduleAndCurrentStatusNot(FlightSchedule flightSchedule,int status);
 
     Optional<FlightBooking> findFirstByFlightScheduleAndCurrentStatusOrderByCreatedAtAsc(FlightSchedule flightSchedule, Integer currentStatus);
 }
